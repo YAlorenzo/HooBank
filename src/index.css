@@ -39,7 +39,15 @@
       #5ce1e6 51.94%,
       #33bbcf 90.29%);
 }
-
+.bg-blue-gradient:hover{
+  background: linear-gradient(157.81deg,
+        #33bbcf -43.27%,
+        #5ce1e6 -21.24%,
+        #7de7eb 12.19%,
+        #9dedf0 29.82%,
+        #bef3f5 51.94%,
+        #def9fa 90.29%);
+}
 .bg-black-gradient {
   background: linear-gradient(144.39deg,
       #ffffff -278.56%,
@@ -129,4 +137,66 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transform: scale(1);
+}
+.form{
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form_input{
+  color: #11101d;
+  font-size: large;
+  padding-left: 10px;
+  background-color: #bef3f5;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+}
+.form_comment{
+  color: #11101d;
+  font-size: large;
+  padding: 10px;
+  background-color: #bef3f5;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+.input_label{
+  font-size: large;
+  display: block;
+  color: #ffffff;
+}
+.input_label:not(:first-child){
+ margin-top: 30px;
+}
+.flex-center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }

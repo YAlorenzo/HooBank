@@ -3,7 +3,7 @@ import styles from '../style';
 import { discount, robot } from '../assets';
 import GetStarted from './GetStarted';
 
-const Hero = () => {
+const Hero = ({children}) => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -22,7 +22,7 @@ const Hero = () => {
             <span className='text-gradient'>Generation</span> {' '}
           </h1>
           <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted />
+             {children}
           </div>
         </div>
         <h1 className='font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full'>

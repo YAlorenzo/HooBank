@@ -11,6 +11,7 @@ import GetStarted from "./GetStarted";
 import Stats from "./Stats";
 import Testimonials from "./Testimonials";
 import Button from "./Button";
+import Modal from "./Modal";
 
 export {
     Navbar,
@@ -26,4 +27,5 @@ export {
     Stats,
     Testimonials,
     Button,
+    Modal
 }
