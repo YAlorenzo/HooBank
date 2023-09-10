@@ -51,7 +51,8 @@ const Modal = () => {
                 outline-none 
                 mt-10 
                 flex-center
-                rounded-[10px]`}>
+                rounded-[10px]
+                transition-colors`}>
                     Get Started
                 </button>
             </form>

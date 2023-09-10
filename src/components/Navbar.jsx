@@ -10,7 +10,7 @@ const Navbar = () => {
       
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
-          <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary
+          <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] hover:text-secondary transition-colors
           ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
             <a href={`#${nav.id}`}>
               {nav.title}
@@ -30,7 +30,7 @@ const Navbar = () => {
           <ul className='list-none flex flex-col justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px]
-          ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
+          ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white transition-colors`}>
             <a href={`#${nav.id}`}>
               {nav.title}
             </a>
